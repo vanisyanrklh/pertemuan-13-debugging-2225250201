@@ -1,0 +1,28 @@
+def hitung_rata_rata(nilai):
+    if not nilai:
+        return 0
+    # Perbaikan: membagi dengan jumlah elemen aktual (len) bukan angka statis
+    return sum(nilai) / len(nilai)
+
+def status(nilai):
+    # Perbaikan: mengubah operator '>' menjadi '>=' agar nilai 60 lulus
+    if nilai >= 60:
+        return "Lulus"
+    return "Tidak lulus"
+
+def nilai_tertinggi(nilai):
+    if not nilai:
+        return None
+    # Perbaikan: Inisialisasi dengan elemen pertama dan gunakan operator '>' untuk mencari maksimum
+    tertinggi = nilai[0]
+    for x in nilai:
+        if x > tertinggi:
+            tertinggi = x
+    return tertinggi
+
+# Data pengujian
+nilai = [80, 60, 90, 70]
+
+print("Rata-rata:", hitung_rata_rata(nilai))
+print("Status 60:", status(60))
+print("Tertinggi:", nilai_tertinggi(nilai))
