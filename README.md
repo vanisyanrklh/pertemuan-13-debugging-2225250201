@@ -5,7 +5,7 @@ print("""
 
 Nama  : Vanisya Nur Khalimah
 NIM   : 2225520201
-Kelas : S1 Pendidikan Matematika
+Kelas : 3B
 
 ## Kasus
 Program yang diuji adalah program perhitungan rata-rata nilai mahasiswa.
